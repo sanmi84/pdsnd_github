@@ -2,36 +2,38 @@ import time
 import pandas as pd
 import numpy as np
 
-CITY_DATA = { 'chicago': 'chicago.csv',
-              'new york city': 'new_york_city.csv',
-              'washington': 'washington.csv' }
+CITY_DATA = { 
+            'chicago': 'chicago.csv',
+            'new york city': 'new_york_city.csv',
+            'washington': 'washington.csv' 
+            }
 
 MONTHS = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
 
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
-
     Returns:
-        (str) city - name of the city to analyze
-        (str) month - name of the month to filter by, or "all" to apply no month filter
-        (str) day - name of the day of week to filter by, or "all" to apply no day filter
+        (str) city - name of the city to analyze.
+        (str) month - name of the month to filter by, or "all" to apply no month filter.
+        (str) day - name of the day of week to filter by, or "all" to apply no day filter.
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! ')
+    print('Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         city = input("Choose a city 'chicago', 'new york city', 'washington': ").lower()
         if city in CITY_DATA:
             break
         else: 
-            print('Invalid city.')
+            print('Error -> Invalid city.')
     # TO D0 O: get user input for month (all, january, february, ... , june)
     while True:
         month = input("Choose a month 'january', 'february', ... 'june' or 'all': ").lower()
         if month in MONTHS:
             break
         else: 
-            print('Invalid Month.')
+            print('Error -> Invalid Month.')
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     days = ['all', 'monday', 'tuesday', 'wednesday', 'april', 'friday', 'saturday', 'sunday']
     while True:
@@ -39,7 +41,7 @@ def get_filters():
         if day in days:
             break
         else: 
-            print('Invalid day.')
+            print('Error -> Invalid day.')
             
     print('-'*40)
     return city, month, day
