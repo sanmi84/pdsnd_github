@@ -8,25 +8,11 @@ Replace the Project Title
 
 ### Description
 Describe what your project is about and what it does
-<<<<<<< HEAD
 Change in branch Master
-||||||| 2a23043
-=======
-Change documentation in -> 3. Additional Changes to Documentation
-Add second line 
->>>>>>> documentation
 
 ### Files used
 Include the files used
 
-Files ignored:
-. chicago.csv
-. new_york_city.csv
-. washington.csv
-
-
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
-### Actions
-1- Create branch documentation 

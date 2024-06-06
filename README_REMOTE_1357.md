@@ -8,13 +8,8 @@ Replace the Project Title
 
 ### Description
 Describe what your project is about and what it does
-<<<<<<< HEAD
-Change in branch Master
-||||||| 2a23043
-=======
 Change documentation in -> 3. Additional Changes to Documentation
 Add second line 
->>>>>>> documentation
 
 ### Files used
 Include the files used
