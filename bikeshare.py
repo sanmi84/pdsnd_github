@@ -187,6 +187,7 @@ def show_rows(df):
             start_loc += 5 
     print('-'*40)
     
+# Edited comment in Github Project
 def main():
     while True:
         city, month, day = get_filters()
@@ -198,7 +199,7 @@ def main():
         user_stats(df)
         show_rows(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\n Would you like to restart? Enter yes or no. \n')
         if restart.lower() != 'yes':
             break
 
